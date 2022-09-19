@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "@typegoose/typegoose": "^9.12.0",
+    "@types/node": "^18.7.18",
+    "apollo-server-core": "^3.10.2",
+    "apollo-server-express": "^3.10.2",
+    "bcryptjs": "^2.4.3",
+    "config": "^3.3.8",
+    "cookie-parser": "^1.4.6",
+    "docker": "^1.0.0",
+    "dotenv": "^16.0.2",
+    "envalid": "^7.3.1",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.1",
+    "morgan": "^1.10.0",
+    "python3": "^0.0.1",
+    "redis": "^4.3.1",
+    "ts-node": "^10.9.1",
+    "type-graphql": "^1.1.1",
+    "typescript": "^4.8.3",
+    "validator": "^13.7.0",
+    "yarn": "^1.22.19"
+  },
+  "name": "0penSourceApis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nitzzz93/0penSourceApis.git",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/config": "^3.3.0",
+    "@types/cookie-parser": "^1.4.3",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/morgan": "^1.9.3",
+    "@types/validator": "^13.7.6"
+  }
+}
