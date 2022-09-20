@@ -1,0 +1,110 @@
+query{
+    logoutUser
+}
+
+response:
+{
+    "data":{
+        "logoutUser": true
+    }
+}
+
+
+query{
+    refreshAccessToken{
+        status,
+    access_token
+    }
+}
+
+response:
+{
+    "data":{
+        "refreshAccessToken":{
+            "status":"success",
+            "access_token":"P0q3JN4tLQ50g3GV92QSZIfKsp/m+Mcy0rF3nAKFd4Cg/QzIqe5hQJ8OygjJeR6AzReCcZ9pX7kOKmEcrH7e9/KyVkGXvw2Wd0BNA/sf6iF6vybayZJOeEM4CJUDp6Veks76pLzM9pejhVL3fECEjJfhQmP4+ivlbxgFpmiotEk="
+        }
+    }
+}
+
+query{
+    getMe{
+        status,
+    user{
+        id
+    name
+    email
+    photo
+    role
+    createdAt
+    updatedAt
+    }
+    }
+}
+
+response:
+{
+    "data":{
+        "getMe":{
+            "status":"success",
+            "user"{
+        "id":"629d056c5bd9e19461435389",
+    "name":"nitin gupta"
+    "email":"nitzzz93@gmail.com",
+    "photo":"",
+    "role":"admin"
+    "createdAt":"2022-09-18T19:35:08.906Z"
+    "updatedAt":"2022-09-20T19:35:08.906Z"
+    }
+        }
+    }
+}
+
+mutation ($input: LoginInput!){
+loginUser (input: $input){
+status
+access_token
+}
+}
+
+response:
+{
+    "data":{
+        "loginUser":{
+            "status":"success",
+            "access_token":"P0q3JN4tLQ50g3GV92QSZIfKsp/m+Mcy0rF3nAKFd4Cg/QzIqe5hQJ8OygjJeR6AzReCcZ9pX7kOKmEcrH7e9/KyVkGXvw2Wd0BNA/sf6iF6vybayZJOeEM4CJUDp6Veks76pLzM9pejhVL3fECEjJfhQmP4+ivlbxgFpmiotEk="
+        }
+    }
+}
+
+mutation($input: SignUpInput!){
+signupUser (input: $input) {
+status
+user {
+name
+email
+photo
+role
+}
+}
+}
+
+
+response:
+{
+    "data":{
+        "signupUser":{
+            "status":"success",
+            "user"{
+        "id":"629d056c5bd9e19461435389",
+    "name":"nitin gupta"
+    "email":"nitzzz93@gmail.com",
+    "photo":"",
+    "role":"admin"
+    }
+        }
+    }
+}
+
+
+
